@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  #display {
+    font-size: 10rem;
+    font-weight: bolder;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+  }
+  
+  .hidden {
+    visibility: hidden;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+  }
+  
+  #progress-bar {
+    width: 500px;
+    height: 30px;
+    background-color: lightgray;
+    line-height: 30px;
+    position: relative;
+  }
+  
+  .progress-value {
+    background-color: green;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: width 0.2s linear;
+  }
+  
+  .progress-text {
+    color: white;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 0 5px black;
+  }
